@@ -145,7 +145,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Newtonsoft.Json.xml" />
@@ -160,7 +162,7 @@ REM Create a NuGet package for this project and place the .nupkg file in the pro
 REM If you see this in Visual Studio's Error List window, check the Output window's Build tab for the actual error.
 ECHO Creating NuGet package in Post-Build event...
 
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command "&amp; '$(SolutionDir)..\configuration\New-NuGetPackage.ps1' -NuSpecFilePath '$(SolutionDir)..\configuration\DD4T.Providers.SDLTridion2013sp1.nuspec' -ReleaseNotes 'Build with Visual studio' -VersionNumber 0.0.0-alpha  -PackOptions '-Build -OutputDirectory $Env:nuget_local'" -NoPrompt
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "&amp; '$(SolutionDir)..\configuration\New-NuGetPackage.ps1' -NuSpecFilePath '$(SolutionDir)..\configuration\DD4T.Providers.SDLTridion2013sp1.nuspec' -ReleaseNotes 'Build with Visual studio' -VersionNumber 2.0.0-alpha1  -PackOptions '-Build -OutputDirectory $Env:nuget_local'" -NoPrompt
 )
 
 </PostBuildEvent>
