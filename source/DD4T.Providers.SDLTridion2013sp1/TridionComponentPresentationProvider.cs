@@ -25,8 +25,8 @@ namespace DD4T.Providers.SDLTridion2013sp1
         private string selectByComponentTemplateId;
         private string selectByOutputFormat;
 
-        public TridionComponentPresentationProvider(IProvidersFacade providersFacade)
-            : base(providersFacade)
+        public TridionComponentPresentationProvider(IProviderCommonServices providersCommonServices)
+            : base(providersCommonServices)
         {
             selectByComponentTemplateId = Configuration.SelectComponentByComponentTemplateId;
             selectByOutputFormat = Configuration.SelectComponentByOutputFormat;

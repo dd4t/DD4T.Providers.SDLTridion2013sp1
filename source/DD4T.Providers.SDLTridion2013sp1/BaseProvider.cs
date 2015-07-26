@@ -14,14 +14,14 @@ namespace DD4T.Providers.SDLTridion2013sp1
         protected readonly IDD4TConfiguration Configuration;
          
 
-        public BaseProvider(IProvidersFacade providersFacade)
+        public BaseProvider(IProviderCommonServices providersCommonServices)
         {
-            if (providersFacade == null)
-                throw new ArgumentNullException("providersFacade");
+            if (providersCommonServices == null)
+                throw new ArgumentNullException("providersCommonServices");
 
-            LoggerService = providersFacade.Logger;
-            PublicationResolver = providersFacade.PublicationResolver;
-            Configuration = providersFacade.Configuration;
+            LoggerService = providersCommonServices.Logger;
+            PublicationResolver = providersCommonServices.PublicationResolver;
+            Configuration = providersCommonServices.Configuration;
 
         }
 

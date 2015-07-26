@@ -127,7 +127,7 @@
     	<!-- Create NuGet package -->
     	<Exec Command='$(NuGetFolder)\nuget.exe pack "$(NuSpecFile)"' WorkingDirectory="$(BuildPackageDirectory)"/>
 
-    	<!--<Delete Files="$(NuSpecFile)" />-->
+    	<Delete Files="$(NuSpecFile)" />
 
     	<!-- Create ZipPackage -->
 		<Zip Files="@(FlattenedPackageFiles)" ZipFileName="$(BuildPackageDirectory)\$(ProductName).$(VersionInfo).zip" WorkingDirectory="$(BuildBinDirectory)" />

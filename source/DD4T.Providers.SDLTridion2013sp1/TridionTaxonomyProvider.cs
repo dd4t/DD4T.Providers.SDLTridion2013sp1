@@ -22,8 +22,8 @@ namespace DD4T.Providers.SDLTridion2013sp1
             }
         }
 
-        public TridionTaxonomyProvider(IProvidersFacade providersFacade)
-            : base(providersFacade)
+        public TridionTaxonomyProvider(IProviderCommonServices providersCommonServices)
+            : base(providersCommonServices)
         {
 
         }

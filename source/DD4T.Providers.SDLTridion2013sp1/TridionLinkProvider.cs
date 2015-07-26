@@ -15,8 +15,8 @@ namespace DD4T.Providers.SDLTridion2013sp1
     public class TridionLinkProvider : BaseProvider, ILinkProvider, IDisposable
     {
 
-        public TridionLinkProvider(IProvidersFacade providersFacade)
-            : base(providersFacade)
+        public TridionLinkProvider(IProviderCommonServices providersCommonServices)
+            : base(providersCommonServices)
         {
 
         }
