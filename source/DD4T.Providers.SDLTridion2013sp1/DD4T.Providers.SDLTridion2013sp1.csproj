@@ -36,39 +36,53 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DD4T.Bootstrap.Autofac">
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\DD4T.Bootstrap.Autofac.dll</HintPath>
+    <Reference Include="DD4T.Bootstrap.Autofac, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Bootstrap.Autofac.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="DD4T.Bootstrap.Ninject">
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\DD4T.Bootstrap.Ninject.dll</HintPath>
+    <Reference Include="DD4T.Bootstrap.Ninject, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Bootstrap.Ninject.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="DD4T.ContentModel">
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\DD4T.ContentModel.dll</HintPath>
+    <Reference Include="DD4T.ContentModel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4450e3c7f68bf872, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.ContentModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="DD4T.ContentModel.Contracts">
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\DD4T.ContentModel.Contracts.dll</HintPath>
+    <Reference Include="DD4T.ContentModel.Contracts, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4450e3c7f68bf872, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.ContentModel.Contracts.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="DD4T.ContentModel.XmlSerializers">
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\DD4T.ContentModel.XmlSerializers.dll</HintPath>
+    <Reference Include="DD4T.ContentModel.XmlSerializers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4450e3c7f68bf872, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.ContentModel.XmlSerializers.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="DD4T.Core.Contracts">
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\DD4T.Core.Contracts.dll</HintPath>
+    <Reference Include="DD4T.Core.Contracts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Core.Contracts.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="DD4T.Factories">
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\DD4T.Factories.dll</HintPath>
+    <Reference Include="DD4T.Factories, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Factories.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="DD4T.Mvc">
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\DD4T.Mvc.dll</HintPath>
+    <Reference Include="DD4T.Mvc, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Mvc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="DD4T.Serialization">
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\DD4T.Serialization.dll</HintPath>
+    <Reference Include="DD4T.Providers.Test, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Providers.Test.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="DD4T.Utils">
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\DD4T.Utils.dll</HintPath>
+    <Reference Include="DD4T.Serialization, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4450e3c7f68bf872, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Serialization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DD4T.Utils, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Utils.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DD4T.NET.2.0.2-build20150726105211\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -104,7 +118,7 @@
     <Compile Include="ExtendedQueryParameters.cs" />
     <Compile Include="ITridionQueryWrapper.cs" />
     <Compile Include="Properties\SpecificAssemblyInfo.cs" />
-    <Compile Include="ProviderCommonServices.cs" />
+    <Compile Include="ProvidersCommonServices.cs" />
     <Compile Include="TridionBinaryProvider.cs" />
     <Compile Include="TridionComponentPresentationProvider.cs" />
     <Compile Include="TridionComponentProvider.cs" />
@@ -114,9 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Newtonsoft.Json.xml" />

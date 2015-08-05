@@ -11,13 +11,13 @@ using System.Threading.Tasks;
 
 namespace DD4T.Providers.SDLTridion2013sp1
 {
-    public class ProviderCommonServices : IProviderCommonServices
+    public class ProvidersCommonServices : IProvidersCommonServices
     {
         public IPublicationResolver PublicationResolver { get; private set; }
         public ILogger Logger { get; private set; }
         public IDD4TConfiguration Configuration { get; private set; }
 
-        public ProviderCommonServices(IPublicationResolver resolver, ILogger logger, IDD4TConfiguration configuration)
+        public ProvidersCommonServices(IPublicationResolver resolver, ILogger logger, IDD4TConfiguration configuration)
         {
             if (resolver == null)
                 throw new ArgumentNullException("resolver");

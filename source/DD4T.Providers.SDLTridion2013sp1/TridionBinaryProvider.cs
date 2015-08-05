@@ -21,7 +21,7 @@ namespace DD4T.Providers.SDLTridion2013sp1
     public class TridionBinaryProvider : BaseProvider, IBinaryProvider
     {
 
-        public TridionBinaryProvider(IProviderCommonServices providersCommonServices)
+        public TridionBinaryProvider(IProvidersCommonServices providersCommonServices)
             : base(providersCommonServices)
         {
 

@@ -21,7 +21,7 @@ namespace DD4T.Providers.SDLTridion2013sp1
 
         private static IDictionary<string, DateTime> lastPublishedDates = new Dictionary<string, DateTime>();
 
-        public TridionPageProvider(IProviderCommonServices providersCommonServices)
+        public TridionPageProvider(IProvidersCommonServices providersCommonServices)
             : base(providersCommonServices)
         {
 

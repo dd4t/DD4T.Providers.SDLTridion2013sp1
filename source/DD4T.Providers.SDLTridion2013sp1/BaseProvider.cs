@@ -14,7 +14,7 @@ namespace DD4T.Providers.SDLTridion2013sp1
         protected readonly IDD4TConfiguration Configuration;
          
 
-        public BaseProvider(IProviderCommonServices providersCommonServices)
+        public BaseProvider(IProvidersCommonServices providersCommonServices)
         {
             if (providersCommonServices == null)
                 throw new ArgumentNullException("providersCommonServices");
