@@ -36,77 +36,60 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DD4T.Bootstrap.Autofac, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Bootstrap.Autofac.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="DD4T.ContentModel">
+      <HintPath>..\packages\DD4T.Model.2.0.3-alpha21\lib\net45\DD4T.ContentModel.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="DD4T.Bootstrap.Ninject, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Bootstrap.Ninject.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="DD4T.ContentModel.Contracts">
+      <HintPath>..\packages\DD4T.Model.2.0.3-alpha21\lib\net45\DD4T.ContentModel.Contracts.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="DD4T.ContentModel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4450e3c7f68bf872, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.ContentModel.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="DD4T.ContentModel.XmlSerializers">
+      <HintPath>..\packages\DD4T.Model.2.0.3-alpha21\lib\net45\DD4T.ContentModel.XmlSerializers.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="DD4T.ContentModel.Contracts, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4450e3c7f68bf872, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.ContentModel.Contracts.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="DD4T.Core.Contracts">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DD4T.NET.2.0.0-alpha18\lib\net45\DD4T.Core.Contracts.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="DD4T.ContentModel.XmlSerializers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4450e3c7f68bf872, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.ContentModel.XmlSerializers.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="DD4T.Factories">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DD4T.NET.2.0.0-alpha18\lib\net45\DD4T.Factories.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="DD4T.Core.Contracts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Core.Contracts.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="DD4T.Serialization">
+      <HintPath>..\packages\DD4T.Model.2.0.3-alpha21\lib\net45\DD4T.Serialization.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="DD4T.Factories, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Factories.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DD4T.Mvc, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DD4T.Providers.Test, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Providers.Test.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DD4T.Serialization, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4450e3c7f68bf872, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Serialization.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DD4T.Utils, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\DD4T.Utils.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\DD4T.NET.2.0.0-build20150805103759\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="DD4T.Utils">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DD4T.NET.2.0.0-alpha18\lib\net45\DD4T.Utils.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Data" />
-    <Reference Include="Tridion.ContentDelivery, Version=7.1.0.165, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
+    <Reference Include="Tridion.ContentDelivery">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SDL-Tridion-2013-sp1.1.0.0\lib\Tridion.ContentDelivery.dll</HintPath>
+      <HintPath>..\packages\sdl-tridion-content-delivery-2013-sp1.1.0.2\lib\net45\Tridion.ContentDelivery.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Tridion.ContentDelivery.AmbientData, Version=7.1.0.165, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
+    <Reference Include="Tridion.ContentDelivery.AmbientData">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SDL-Tridion-2013-sp1.1.0.0\lib\Tridion.ContentDelivery.AmbientData.dll</HintPath>
+      <HintPath>..\packages\sdl-tridion-content-delivery-2013-sp1.1.0.2\lib\net45\Tridion.ContentDelivery.AmbientData.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Tridion.ContentDelivery.Configuration, Version=7.1.0.165, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
+    <Reference Include="Tridion.ContentDelivery.Configuration">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SDL-Tridion-2013-sp1.1.0.0\lib\Tridion.ContentDelivery.Configuration.dll</HintPath>
+      <HintPath>..\packages\sdl-tridion-content-delivery-2013-sp1.1.0.2\lib\net45\Tridion.ContentDelivery.Configuration.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Tridion.ContentDelivery.Interop, Version=7.1.0.10, Culture=neutral, PublicKeyToken=ddfc895746e5ee6b, processorArchitecture=MSIL">
+    <Reference Include="Tridion.ContentDelivery.Interop">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SDL-Tridion-2013-sp1.1.0.0\lib\Tridion.ContentDelivery.Interop.dll</HintPath>
+      <HintPath>..\packages\sdl-tridion-content-delivery-2013-sp1.1.0.2\lib\net45\Tridion.ContentDelivery.Interop.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -141,17 +124,22 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <Import Project="..\..\DD4T Providers.Targets" />
-  <Target Name="AfterBuild">
-    <CallTarget Targets="Package" />
-    <Message Text="Installing package to local NuGet repo" Importance="high" Condition="'$(NUGET_LOCALREPO)' != ''" />
-    <CallTarget Targets="Install" Condition="'$(NUGET_LOCALREPO)' != ''" />
-  </Target>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+
+  <Import Project="..\..\DD4T Providers.Targets" />
+  <Target Name="AfterBuild">
+    <CallTarget Targets="Package" />
+    <Message Text="Installing package to local NuGet repo" Importance="high" Condition="'$(NUGET_LOCALREPO)' != ''" />
+    <CallTarget Targets="Install" Condition="'$(NUGET_LOCALREPO)' != ''" />
+  </Target>
+  <Target Name="BeforeBuild">
+    <Message Text="Mimic Tridion NuGet packages if there are files in the dependency folder" Importance="high" />
+    <CallTarget Targets="MimicPackages" />
   </Target>
 </Project>
