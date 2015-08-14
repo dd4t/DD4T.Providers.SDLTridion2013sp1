@@ -178,8 +178,15 @@
 		<!-- Create NuGet package -->
 		<Exec Command='$(NuGetFolder)\nuget.exe pack "$(NuSpecFile)"' WorkingDirectory="$(BuildPackageDirectory)"/>
 
+		<XmlPeek
+			Namespaces="&lt;Namespace Prefix='nuget' Uri='http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd' /&gt;"
+			Query="//id/text()"
+			XmlInputPath="$(NuSpecFile)">
+			<Output TaskParameter="Result" ItemName="PackageName" />
+		</XmlPeek>
+
 		<!-- Create ZipPackage -->
-		<Zip Files="@(PackageFiles)" ZipFileName="$(BuildPackageDirectory)\DD4T.Model.$(VersionInfo).zip" WorkingDirectory="$(BuildWorkDirectory)" />
+		<Zip Files="@(PackageFiles)" ZipFileName="$(BuildPackageDirectory)\@(PackageName).$(VersionInfo).zip" WorkingDirectory="$(BuildWorkDirectory)" />
 
 		<!-- Remove temporary files -->
 		<RemoveDir Directories="$(BuildNugetDirectory)" />
