@@ -15,25 +15,13 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		MVC3|Any CPU = MVC3|Any CPU
-		MVC4|Any CPU = MVC4|Any CPU
 		Release|Any CPU = Release|Any CPU
-		Release2011SP1|Any CPU = Release2011SP1|Any CPU
-		Release2013|Any CPU = Release2013|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.MVC3|Any CPU.ActiveCfg = Release|Any CPU
-		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.MVC3|Any CPU.Build.0 = Release|Any CPU
-		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.MVC4|Any CPU.ActiveCfg = Release|Any CPU
-		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.MVC4|Any CPU.Build.0 = Release|Any CPU
 		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.Release|Any CPU.Build.0 = Release|Any CPU
-		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.Release2011SP1|Any CPU.ActiveCfg = Release|Any CPU
-		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.Release2011SP1|Any CPU.Build.0 = Release|Any CPU
-		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.Release2013|Any CPU.ActiveCfg = Release|Any CPU
-		{425402D5-E8AD-427A-8A0C-3CFD4391D533}.Release2013|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
