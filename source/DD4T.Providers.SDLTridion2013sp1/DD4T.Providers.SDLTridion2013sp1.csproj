@@ -98,13 +98,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Dynamic Delivery Presentation Solution Items\AssemblyInfo.cs">
-      <Link>Properties\AssemblyInfo.cs</Link>
-    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BaseProvider.cs" />
     <Compile Include="ExtendedQueryParameters.cs" />
     <Compile Include="ITridionQueryWrapper.cs" />
-    <Compile Include="Properties\SpecificAssemblyInfo.cs" />
     <Compile Include="ProvidersCommonServices.cs" />
     <Compile Include="TridionBinaryProvider.cs" />
     <Compile Include="TridionComponentPresentationProvider.cs" />
@@ -135,7 +132,6 @@
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
-
   <Import Project="..\..\DD4T Providers.Targets" />
   <Target Name="AfterBuild">
     <CallTarget Targets="Package" />
