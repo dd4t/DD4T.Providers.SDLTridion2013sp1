@@ -50,12 +50,12 @@
     </Reference>
     <Reference Include="DD4T.Core.Contracts">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DD4T.NET.2.0.0-alpha18\lib\net45\DD4T.Core.Contracts.dll</HintPath>
+      <HintPath>..\packages\DD4T.Core.2.0.0-alpha19\lib\net45\DD4T.Core.Contracts.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DD4T.Factories">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DD4T.NET.2.0.0-alpha18\lib\net45\DD4T.Factories.dll</HintPath>
+      <HintPath>..\packages\DD4T.Core.2.0.0-alpha19\lib\net45\DD4T.Factories.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DD4T.Serialization">
@@ -64,7 +64,7 @@
     </Reference>
     <Reference Include="DD4T.Utils">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\DD4T.NET.2.0.0-alpha18\lib\net45\DD4T.Utils.dll</HintPath>
+      <HintPath>..\packages\DD4T.Core.2.0.0-alpha19\lib\net45\DD4T.Utils.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
