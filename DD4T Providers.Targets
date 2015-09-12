@@ -193,6 +193,16 @@
 		<RemoveDir Directories="$(BuildWorkDirectory)" />
 		<Delete Files="$(NuSpecFile)" />
 	</Target>
+	
+	<Target Name="BeforeBuild">
+	  <ItemGroup>
+	        <ReferenceNew Include="@(Reference)">
+	           <Private>False</Private>
+	        </ReferenceNew>
+	        <Reference Remove="@(Reference)"/>
+	        <Reference Include="@(ReferenceNew)"/>
+	  </ItemGroup>
+	</Target>
 
 	<Target Name="Install">
 		<ItemGroup>
