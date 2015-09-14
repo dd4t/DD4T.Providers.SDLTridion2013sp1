@@ -9,9 +9,9 @@
     <description>SDL Tridion 2013 SP1 Providers for DD4T</description>
     <releaseNotes>
     </releaseNotes>
-    <tags>SDLTridion Tridion DD4T</tags>
+    <tags>SDLTridion Tridion DD4T</tags> 
     <dependencies>
-      <dependency id="DD4T.Core" version="2.0.0-alpha28" />
+      <dependency id="DD4T.Core" version="2.0.0-alpha56" />
     </dependencies>
   </metadata>
 </package>
