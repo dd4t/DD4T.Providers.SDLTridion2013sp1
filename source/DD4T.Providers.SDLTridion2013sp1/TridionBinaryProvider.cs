@@ -159,12 +159,13 @@ namespace DD4T.Providers.SDLTridion2013sp1
             return componentMeta == null ? DateTime.MinValue : componentMeta.LastPublicationDate;
         }
 
-
+        [Obsolete("Retrieving binaries as a stream will be removed from the next version of DD4T")]
         public System.IO.Stream GetBinaryStreamByUri(string uri)
         {
             throw new NotImplementedException();
         }
 
+        [Obsolete("Retrieving binaries as a stream will be removed from the next version of DD4T")]
         public System.IO.Stream GetBinaryStreamByUrl(string url)
         {
             SqlReaderStream stream = null;
