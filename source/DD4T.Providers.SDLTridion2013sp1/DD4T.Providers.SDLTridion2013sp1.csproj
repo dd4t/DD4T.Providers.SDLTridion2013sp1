@@ -78,11 +78,6 @@
       <HintPath>..\packages\sdl-tridion-content-delivery-2013-sp1.1.0.2\lib\net45\Tridion.ContentDelivery.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Tridion.ContentDelivery.AmbientData">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\sdl-tridion-content-delivery-2013-sp1.1.0.2\lib\net45\Tridion.ContentDelivery.AmbientData.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Tridion.ContentDelivery.Configuration">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\sdl-tridion-content-delivery-2013-sp1.1.0.2\lib\net45\Tridion.ContentDelivery.Configuration.dll</HintPath>
