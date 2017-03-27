@@ -10,6 +10,7 @@ namespace DD4T.Providers.SDLTridion2013sp1
     public class TridionTaxonomyProvider : BaseProvider, ITaxonomyProvider, IDisposable
     {
         private TaxonomyFactory _taxonomyFactory;
+
         public TaxonomyFactory TaxonomyFactory
         {
             get
@@ -25,9 +26,10 @@ namespace DD4T.Providers.SDLTridion2013sp1
         public TridionTaxonomyProvider(IProvidersCommonServices providersCommonServices)
             : base(providersCommonServices)
         {
-
         }
+
         #region ITaxonomyProvider
+
         public Dynamic.IKeyword GetKeyword(string categoryUriToLookIn, string keywordName)
         {
             //Create filter to retrieve all keywords in a taxonomy
@@ -54,7 +56,7 @@ namespace DD4T.Providers.SDLTridion2013sp1
             foreach (var currentKeyword in taxonomy)
             {
                 string currentKeywordName = currentKeyword.KeywordName;
-                if (currentKeywordName != keywordName)
+                if (!currentKeywordName.Equals(keywordName, StringComparison.InvariantCultureIgnoreCase))
                 {
                     foundKeyword = recursive(currentKeyword.KeywordChildren.Cast<Keyword>().ToList(), keywordName);
                 }
@@ -75,7 +77,6 @@ namespace DD4T.Providers.SDLTridion2013sp1
                         newParentKeyword.Title = par.KeywordName;
                         returnKeyword.ParentKeywords.Add(newParentKeyword); //Add the parentkeyword to the list
                         par = par.ParentKeyword;
-
                     } while (par != null);
 
                     //Add remaining properties to the returnKeyword
@@ -90,9 +91,10 @@ namespace DD4T.Providers.SDLTridion2013sp1
             return null;
         }
 
-        #endregion
+        #endregion ITaxonomyProvider
 
         #region IDisposable
+
         protected virtual void Dispose(bool isDisposed)
         {
             if (!isDisposed)
@@ -110,16 +112,17 @@ namespace DD4T.Providers.SDLTridion2013sp1
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-        #endregion
+
+        #endregion IDisposable
 
         #region private
+
         private Keyword recursive(List<Keyword> keywords, string valueToLookFor)
         {
             Keyword returnValue = null;
             foreach (var item in keywords)
             {
-
-                if (item.KeywordName == valueToLookFor)
+                if (item.KeywordName.Equals(valueToLookFor, StringComparison.InvariantCultureIgnoreCase))
                 {
                     returnValue = item;
                 }
@@ -138,8 +141,6 @@ namespace DD4T.Providers.SDLTridion2013sp1
             return returnValue;
         }
 
-        #endregion
-
-
+        #endregion private
     }
 }
